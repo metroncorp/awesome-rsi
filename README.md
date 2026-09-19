@@ -17,6 +17,7 @@
   <a href="#citation">📝 Cite</a> &nbsp;•&nbsp;
   <a href="#taxonomy-at-a-glance">🧭 Taxonomy</a> &nbsp;•&nbsp;
   <a href="#paper-catalog">📚 Catalog</a> &nbsp;•&nbsp;
+  <a href="#industry-practices">🏭 Industry Cases</a> &nbsp;•&nbsp;
   <a href="#latest-updates">🆕 Updates</a> &nbsp;•&nbsp;
   <a href="#contributing">🤝 Contribute</a>
 </p>
@@ -41,7 +42,10 @@ RSI is the capability of an intelligent system to transform acquired experience 
 
 ## Latest Updates <sub><a href="#readme-top">↑ top</a></sub>
 
-This section highlights recent, source-verifiable RSI research and industry developments. It is editorially separate from the 519-paper taxonomy, so a release or technical report is never presented as a peer-reviewed paper by default.
+This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 519-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+
+1. **2026-09-19 — Public Industry Practices added:** A new [source-verified timeline](#industry-practices) records **11** publicly disclosed cases in which AI systems contribute to AI R&D, training or inference infrastructure, or retained self-improvement loops. Each entry distinguishes the reported result from the limits of its RSI claim. [[Browse the timeline](#industry-practices)]
+   ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Industry-0f766e) ![](https://img.shields.io/badge/-Curation-7c3aed)
 
 1. **2026-09-10 — Companion survey released:** [*The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement*](https://arxiv.org/abs/2609.11873) introduces HCI and the L1-L5 RSI roadmap used by this repository. [[Paper](https://arxiv.org/abs/2609.11873)]
    ![](https://img.shields.io/badge/-Research-2563eb) ![](https://img.shields.io/badge/-Survey-7c3aed) ![](https://img.shields.io/badge/-arXiv-b31b1b)
@@ -49,16 +53,41 @@ This section highlights recent, source-verifiable RSI research and industry deve
 <details>
 <summary><strong>Update policy</strong></summary>
 
-- Include only a primary research source, official organization post, technical report, release note, or maintained project page.
-- Tag each item as `Research` or `Industry`, then with its material type (`Paper`, `Survey`, `Technical Report`, `Official Blog`, `Release`, or `Project`). State its publication date and a neutral, one-sentence explanation of RSI relevance.
-- Link research to an official proceedings page, DOI, or arXiv record; link industry items to the organization's original publication, never to a repost or social-media summary.
+- Include a repository update only when it adds or materially revises source-verified coverage; sources remain limited to primary research, official organization posts, technical reports, release notes, or maintained project pages.
+- Tag source items as `Research` or `Industry` and state their material type (`Paper`, `Survey`, `Technical Report`, `Official Blog`, `Release`, or `Project`); tag repository-maintenance entries as `Repository` and state the affected coverage. State the update date and a neutral, one-sentence explanation of RSI relevance.
+- Link research to an official proceedings page, DOI, or arXiv record; link industry items to the organization's original publication, never to a repost or social-media summary; link repository updates to the affected section.
 - An update is not automatically an in-scope taxonomy paper. It enters the L1-L5 catalog only after the same paper-level relevance review.
 
 </details>
 
+<a id="industry-practices"></a>
+
+## Public Industry Practices <sub><a href="#readme-top">↑ top</a></sub>
+
+This timeline records **publicly disclosed cases in which AI systems participate in their organization's AI R&D, training or inference infrastructure, or a retained self-improvement loop**. It is deliberately separate from the paper catalog: each item is linked to a primary organization source and is **not** evidence that the system autonomously trained a successor frontier model. Results below are organization-reported, not independently reproduced.
+
+Entries are ordered by publication date (newest first). “Boundary” names the most important limitation on the RSI claim rather than treating all feedback-driven optimization as equivalent.
+
+| Date | Organization / primary source | Publicly disclosed practice | Reported result and boundary |
+| --- | --- | --- | --- |
+| 2026-09-17 | [Z.ai — *How GLM Built Its Own Inference Infrastructure*](https://z.ai/blog/glm-built-its-inference-infrastructure) | GLM-5.3 proposed and validated optimizations for the production inference infrastructure serving GLM-5.3-Flash, using correctness checks, execution traces, microbenchmarks, and end-to-end measurements. | Production-ready in under two weeks; end-to-end throughput reached about **3×** the initial version. This improves serving infrastructure, not GLM's own weights. |
+| 2026-09-17 | [Anthropic — *Measurements for Understanding the Pace of AI Development Inside Frontier Labs*](https://www.anthropic.com/institute/measuring-pace-of-ai-development) | Anthropic measured Claude's participation across its internal AI-development work. | As of August 2026, Claude was reported to lead about **26%** of measured AI-R&D work and to collaborate on over **90%**; no measured task category was fully autonomous. |
+| 2026-08-28 | [Tencent Hunyuan — *Tencent Releases and Open-Sources Tencent Hy4 Preview*](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/) | Hy4 preview participated in its own R&D, including training methods, data strategy, evaluation, and low-level operator optimization; it also iterated on inference-system bottlenecks using experimental feedback. | Tencent reports **31.8%** end-to-end inference-throughput improvement. The objectives and acceptance process remain externally defined. |
+| 2026-07-29 | [OpenAI — *How GPT-5.6 Fuses Frontier Intelligence with Frontier Efficiency*](https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/) | GPT-5.6 Sol analyzed production workloads, tested routing and forward-pass changes, rewrote production Triton/Gluon operators, and ran architecture experiments for speculative-decoding models. | OpenAI reports **20%** lower end-to-end serving cost and over **15%** token-generation efficiency improvement for speculative decoding. Neither figure means the base model retrained itself. |
+| 2026-07-16 | [Moonshot AI — *Kimi K3: Open Frontier Intelligence*](https://www.kimi.com/en/blog/kimi-k3) | Early K3 versions performed most of the team's operator-optimization work late in K3 development, including attention-kernel work and a MiniTriton compiler demonstration. | This is model-assisted development of the software stack; the post does not establish a corresponding whole-training speedup or autonomous model development. |
+| 2026-06-23 | [ByteDance Seed — *Seed2.1 Officially Released: Advancing AI Productivity*](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity) | Through “Seed for Seed,” Seed2.1 entered internal model R&D for evaluation, diagnosis, SFT data, RL-framework optimization, paper reproduction, and experiment validation, with multi-round use of intermediate artifacts and feedback. | Some tasks reportedly run for hours to tens of days. The post does not quantify an independent contribution to the final model or claim end-to-end autonomy. |
+| 2026-06 | [Anthropic — *When AI Builds Itself*](https://www.anthropic.com/institute/recursive-self-improvement) | Claude investigated training-cluster failures, modified training code, ran experiments, and reviewed code in Anthropic's development workflow. | Anthropic reports that over **80%** of merged code was attributable to Claude as of May 2026. Controlled training-code experiments should not be read as whole-frontier-training speedups. |
+| 2026-05 | [OpenBMB — *ForgeTrain: An LLM Pretraining Framework Built End-to-End by an Autonomous Agent Loop*](https://github.com/OpenBMB/ForgeTrain) | An autonomous coding-agent loop wrote, debugged, and optimized an LLM pretraining framework end-to-end, repeatedly launching training jobs, parsing logs, diagnosing failures, patching code, and passing validation gates. The resulting framework completed MiniCPM4-0.5B pretraining and produced usable model weights. | OpenBMB reports **44.13% MFU** on 64×H100, about **10% above** its Megatron-LM baseline. The coding agent was external to MiniCPM; the harness, gates, objectives, and reference stack remained externally designed. |
+| 2026-04-02 | [Meta — *KernelEvolve*](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/) | Meta's Ranking Engineer Agent autonomously designed, executed, and analyzed model experiments; KernelEvolve retained a search tree while iterating through code generation, compilation, correctness checks, and performance tests for kernels. | Meta reports over **60%** inference-throughput improvement for an Andromeda advertising model on NVIDIA GPUs and over **25%** training-throughput improvement for an advertising model on MTIA. These are not Llama results. |
+| 2026-03-18 | [MiniMax — *M2.7: Early Echoes of Self-Evolution*](https://www.minimax.io/news/minimax-m27-en) | M2.7 participated in RL-team workflows and repeatedly improved its own agent framework, tools, skills, and memory from failed trajectories and evaluation feedback. | MiniMax reports coverage of **30–50%** of selected workflows; one autonomous framework experiment ran for over **100** rounds and improved an internal evaluation by **30%**. These are workflow and internal-evaluation results, not a general base-model gain. |
+| 2025-05-14 | [Google DeepMind — *AlphaEvolve*](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) | AlphaEvolve used Gemini to generate algorithm candidates that were automatically evaluated and evolved; applications included Google infrastructure and a matrix-multiplication kernel used in Gemini training. | DeepMind reports a **23%** speedup for that training kernel, corresponding to roughly **1%** lower overall Gemini-training time. The search-and-verification harness remains a fixed, externally designed system. |
+
+The companion catalog retains research prototypes and papers—such as [Darwin Gödel Machine](https://arxiv.org/abs/2505.22954) and [Hyperagents](https://arxiv.org/abs/2603.19461)—under their primary L1–L5 mechanism rather than presenting them here as deployed industrial practice. This separation preserves a useful distinction: current public evidence most strongly supports human-supervised, verifier-mediated loops around infrastructure, experiments, and agent workflows—not fully autonomous successor-model development.
+
 ## Table of Contents
 
 - [Latest Updates](#latest-updates)
+- [Public Industry Practices](#industry-practices)
 - [Reading Paths](#reading-paths)
 - [Companion Survey](#companion-survey)
 - [Scope and Relevance Decision](#scope-and-relevance-decision)
