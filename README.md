@@ -13,6 +13,7 @@
 </p>
 
 <p>
+  <a href="#start-here">🚀 Start Here</a> &nbsp;•&nbsp;
   <a href="https://arxiv.org/abs/2609.11873">📄 Survey</a> &nbsp;•&nbsp;
   <a href="#citation">📝 Cite</a> &nbsp;•&nbsp;
   <a href="#taxonomy-at-a-glance">🧭 Taxonomy</a> &nbsp;•&nbsp;
@@ -35,6 +36,22 @@ RSI is the capability of an intelligent system to transform acquired experience 
   <br>
   <em><b>Figure 1.</b> RSI autonomy overview: from in-task iteration and execution automation, through strategy search and experience acquisition, to deployment automation and meta-level improvement.</em>
 </div>
+
+---
+
+<a id="start-here"></a>
+
+## Start Here <sub><a href="#readme-top">↑ top</a></sub>
+
+Use this repository according to the question you are trying to answer. The full catalog is the reference layer; these routes are the faster entry points.
+
+| Your question | Start with |
+| --- | --- |
+| **How do I enter the field?** | Follow the [Reading Paths](#reading-paths), then use the [L1–L5 overview](#taxonomy-at-a-glance) to place each paper. |
+| **Does a system really demonstrate RSI?** | Apply the [improvement-loop anatomy](#rsi-improvement-loop-anatomy) and check what changes, what persists, and what remains externally controlled. |
+| **What has changed recently?** | Read [Latest Updates](#latest-updates) for curated repository changes and [Public Industry Practices](#industry-practices) for source-verified real-world cases. |
+
+> **Curation rule:** A source enters the catalog only when it adds a distinct mechanism, result, or material correction; has a primary source; and supports a clear RSI boundary claim. Other leads remain outside the catalog until verified.
 
 ---
 
@@ -98,6 +115,7 @@ These cases range from benchmarked research systems to deployed infrastructure. 
 
 ## Table of Contents
 
+- [Start Here](#start-here)
 - [Latest Updates](#latest-updates)
 - [Public Industry Practices](#industry-practices)
 - [Reading Paths](#reading-paths)
