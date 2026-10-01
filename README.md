@@ -7,7 +7,7 @@
 <strong>A taxonomy-first, auditable map of recursive self-improvement research.</strong>
 
 <p>
-  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-522-2563eb?style=flat-square"></a>
+  <a href="#paper-catalog"><img alt="Papers" src="https://img.shields.io/badge/papers-524-2563eb?style=flat-square"></a>
   <a href="https://arxiv.org/abs/2609.11873"><img alt="Companion survey" src="https://img.shields.io/badge/Companion%20Survey-arXiv%3A2609.11873-b31b1b?style=flat-square&amp;logo=arxiv&amp;logoColor=white"></a>
   <a href="#taxonomy-at-a-glance"><img alt="Taxonomy" src="https://img.shields.io/badge/taxonomy-L1--L5-7c3aed?style=flat-square"></a>
 </p>
@@ -42,7 +42,10 @@ RSI is the capability of an intelligent system to transform acquired experience 
 
 ## Latest Updates <sub><a href="#readme-top">↑ top</a></sub>
 
-This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 522-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+This section logs material updates to this repository, including new source-verified research, industry coverage, and curation. It is editorially separate from the 524-paper taxonomy, so a release, project page, or repository update is never presented as a peer-reviewed paper by default.
+
+1. **2026-09-29 — Harness- and meta-level RSI papers added:** Added [Harness-Zero: Harness Distillation via Agent-as-Harness](https://arxiv.org/abs/2609.24974) ([code](https://github.com/metaevo-ai/harness-zero)) to [L2](#2-l2---autonomy-over-improvement-strategies) and [Meta Context Engineering via Agentic Skill Evolution](https://proceedings.mlr.press/v306/ye26g.html) ([arXiv](https://arxiv.org/abs/2601.21557), [code](https://github.com/metaevo-ai/meta-context-engineering)) to [L5](#5-l5---from-environmental-adaptation-to-meta-improvement) after checking their primary sources and classification boundaries.
+   ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Research-2563eb)
 
 1. **2026-09-25 — Recent RSI sources reviewed:** Added [AIDE²](https://arxiv.org/abs/2609.26457) to [L5](#5-l5---from-environmental-adaptation-to-meta-improvement), added Meta's [Organizational Second Brain](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/) to [Public Industry Practices](#industry-practices), and reconciled six catalog titles with their current arXiv records.
    ![](https://img.shields.io/badge/-Repository-475569) ![](https://img.shields.io/badge/-Research-2563eb) ![](https://img.shields.io/badge/-Industry-0f766e)
@@ -139,7 +142,7 @@ The survey introduces the Headroom-Closed Index (HCI), develops the RSI roadmap 
 
 ## Scope and Relevance Decision <sub><a href="#readme-top">↑ top</a></sub>
 
-**The 491 baseline papers, 28 table-derived extensions, and three independently screened additions in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
+**The 491 baseline papers, 28 table-derived extensions, and five independently screened additions in this collection are retained as RSI-related under the L1-L5 taxonomy.** The taxonomy intentionally includes bounded forms and precursors:
 
 - **L1 - Autonomy over Improvement Execution:** the system executes a human-defined improvement procedure, and its accepted results persist into later tasks or rounds.
 - **L2 - Autonomy over Improvement Strategies:** the system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains external.
@@ -193,10 +196,10 @@ Blue, purple, orange, green, and red encode L1 through L5. Target colors disting
 | Level | Papers | Interpretation |
 | --- | ---: | --- |
 | L1 | 219 | Autonomy over improvement execution. |
-| L2 | 160 | Autonomy over improvement strategies. |
+| L2 | 161 | Autonomy over improvement strategies. |
 | L3 | 65 | Autonomy over future learning experience. |
 | L4 | 45 | Autonomy in deployment and environmental adaptation. |
-| L5 | 33 | From environmental adaptation to meta-improvement. |
+| L5 | 34 | From environmental adaptation to meta-improvement. |
 
 Each level begins with a small set of **featured representative papers**, selected to cover its defining mechanisms and important research landmarks. They are entry points for reading, not quality rankings; the complete catalog remains available in the expandable section below each level.
 
@@ -1344,7 +1347,7 @@ The following additions are explicitly discussed in Table 3 of the survey, which
 
 ## 2. L2 - Autonomy over Improvement Strategies <sub><a href="#readme-top">↑ top</a></sub>
 
-The system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains externally specified. **160 papers.**
+The system chooses how to improve a specified target, while the objective, evaluation criterion, or acceptance rule remains externally specified. **161 papers.**
 
 ### Featured representative papers
 
@@ -1359,7 +1362,7 @@ The system chooses how to improve a specified target, while the objective, evalu
 | [AFlow](https://arxiv.org/abs/2410.10762) | Searches code-represented agent workflows with execution feedback. |
 
 <details>
-<summary><strong>Browse the full L2 catalog (160 papers)</strong></summary>
+<summary><strong>Browse the full L2 catalog (161 papers)</strong></summary>
 
 ### Table-derived extensions
 
@@ -2161,12 +2164,17 @@ The following additions are explicitly listed in Table 4, which groups represent
    ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--External_Artifact-4f46e5)  
    *Taxonomy:* L2. *Updated object(s):* 9.1 Program Code.
 
-### Independently screened addition (2026-09-24)
+### Independently screened additions (2026-09-24 and 2026-09-29)
 
 1. **Language Agents as Optimizable Graphs (GPTSwarm)**<br>
    [[Paper](https://arxiv.org/abs/2402.16823)] · arXiv:2402.16823<br>
    ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)<br>
    *Editorial rationale:* Task feedback updates agent-graph connections and node prompts across optimization rounds; the task utility and optimization procedures remain externally specified. *Updated object(s):* 3.1 Workflow / Graph; 1.2 Task Prompt / Template.
+
+1. **Harness-Zero: Harness Distillation via Agent-as-Harness**<br>
+   [[Paper](https://arxiv.org/abs/2609.24974)] · [[Code](https://github.com/metaevo-ai/harness-zero)] · arXiv:2609.24974<br>
+   ![](https://img.shields.io/badge/-Level--L2-7c3aed) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Model-1d4ed8)<br>
+   *Editorial rationale:* A skill-guided search loop evolves a domain harness. An adapted reference harness then guides a separate harnessing agent to pass or replace student responses before execution, and supervised fine-tuning transfers accepted behaviors into the target model's weights so the specialized harness is unnecessary at deployment. The task, evaluator, harness-evolution procedure, and training objective remain externally specified. *Updated object(s):* 5.1 Model Weights; 3.6 Harness Implementation / Scaffold Code.
 
 </details>
 
@@ -2778,7 +2786,7 @@ The following additions are explicitly discussed in Table 6 under trajectory dis
 
 ## 5. L5 - From Environmental Adaptation to Meta-Improvement <sub><a href="#readme-top">↑ top</a></sub>
 
-The system improves the mechanism that produces future improvements, including search, evaluation, and research-control policies. **33 papers.**
+The system improves the mechanism that produces future improvements, including search, evaluation, and research-control policies. **34 papers.**
 
 <div align="center">
   <img src="./assets/rsi-l4-l5-meta-improvement.png" width="100%" alt="Comparison of L4 environmental adaptation and L5 recursive meta-improvement. L5 revises and validates the improvement process inherited by successor systems under external human mission, safety, evaluation, and acceptance constraints.">
@@ -2800,7 +2808,7 @@ The system improves the mechanism that produces future improvements, including s
 | [The Red Queen Gödel Machine](https://arxiv.org/abs/2606.26294) | Co-evolves agents and evaluators, making the improvement criterion part of the meta-level loop. |
 
 <details>
-<summary><strong>Browse the full L5 catalog (33 papers)</strong></summary>
+<summary><strong>Browse the full L5 catalog (34 papers)</strong></summary>
 
 ### Table-derived extensions
 
@@ -2962,7 +2970,7 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
    ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Evaluator_&_Feedback-a21caf)  
    *Taxonomy:* L5. *Updated object(s):* 7.1 Judge; 4.4 Skill Library.
 
-### Independently screened additions (2026-09-24–25)
+### Independently screened additions (2026-09-24–29)
 
 1. **Dream-RSI: Recursive Self-Improvement through Evolving Worlds**<br>
    [[Paper](https://arxiv.org/abs/2609.14858)] · [[Project](https://www.dream-rsi.com/)] · arXiv:2609.14858<br>
@@ -2973,6 +2981,11 @@ The following additions are explicitly listed in Table 7 as L5 mechanisms with i
    [[Paper](https://arxiv.org/abs/2609.26457)] · arXiv:2609.26457<br>
    ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Harness_%2F_Workflow-0f766e)<br>
    *Editorial rationale:* In the main run, a fixed outer-loop research agent rewrites an incumbent inner-loop AI R&D agent's harness, evaluates candidates on private held-out task scores, and uses the best-scoring agent as the next rewrite target. The study reports seven accepted rewrites in eight days; its task families, selection benchmark, evaluation budget, and outer-loop selection rule remain fixed. A separate ignition test uses a discovered agent as the outer-loop improver but does not establish that it outperforms the original one. *Updated object(s):* 3.6 Scaffold Code; 6.5 Search / Meta-optimization Procedure; 2.1 Experience Memory.
+
+1. **Meta Context Engineering via Agentic Skill Evolution**<br>
+   [[Paper](https://proceedings.mlr.press/v306/ye26g.html)] · [[arXiv](https://arxiv.org/abs/2601.21557)] · [[Code](https://github.com/metaevo-ai/meta-context-engineering)] · arXiv:2601.21557 · ICML 2026<br>
+   ![](https://img.shields.io/badge/-Level--L5-be123c) ![](https://img.shields.io/badge/-In_scope--RSI-16a34a) ![](https://img.shields.io/badge/-Target--Tools_&_Skills-2563eb)<br>
+   *Editorial rationale:* A meta-agent uses validation performance and prior-search history to evolve executable context-engineering skills, while a base agent applies each skill to training rollouts to produce context artifacts. Because the retained skill governs how subsequent contexts are learned, the outer loop updates the improvement mechanism itself; the datasets, evaluation objective, budgets, and outer search protocol remain fixed. Full iterative skill evolution is evaluated offline; the online variants use a fixed skill or no skill evolution. *Updated object(s):* 6.5 Search / Meta-optimization Procedure; 4.4 Skill Library; 1.2 Task Prompt / Template.
 
 </details>
 
@@ -3011,7 +3024,7 @@ If you find this repository or its taxonomy useful, please cite the companion su
 
 ## Data Provenance and Validation <sub><a href="#readme-top">↑ top</a></sub>
 
-This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus three independently screened papers added on 2026-09-24 and 2026-09-25. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later additions record their editorial rationales separately. Authors and venue metadata are not inferred for catalog entries.
+This document combines a 491-paper per-paper taxonomy dataset with 28 additional works selected from the survey's representative Tables 3-7 on 2026-09-11, plus five independently screened papers added between 2026-09-24 and 2026-09-29. The baseline dataset records a title, arXiv ID, primary level, boundary classification, detailed rationale, and updated-object code(s) for every paper. The 28 extensions retain the table-derived rationale; the later additions record their editorial rationales separately. Authors and venue metadata are not inferred for catalog entries.
 
 Catalog integrity checks:
 
@@ -3019,8 +3032,10 @@ Catalog integrity checks:
 - The independently screened [GPTSwarm paper](https://arxiv.org/abs/2402.16823) has a stable arXiv identifier and is classified as L2 because it retains feedback-driven changes to agent prompts and graph connectivity under an externally specified task utility.
 - The independently screened [Dream-RSI paper](https://arxiv.org/abs/2609.14858) has a stable arXiv identifier and is classified as L5 because it updates the exploration policy used to generate later improvements while keeping the coding agent and evaluator fixed.
 - The independently screened [AIDE² paper](https://arxiv.org/abs/2609.26457) has a stable arXiv identifier and is classified as L5 because its fixed outer loop repeatedly rewrites an inner AI R&D agent's improvement procedure, retaining accepted versions as later incumbents; a separate test examines a discovered agent in the outer-loop role.
-- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 522 entries.
+- The independently screened [Harness-Zero paper](https://arxiv.org/abs/2609.24974) has a stable arXiv identifier and is classified as L2 because a skill-guided search loop evolves a domain harness under externally specified tasks, evaluators, and training objectives before the accepted behavior is distilled into model weights.
+- The independently screened [Meta Context Engineering paper](https://proceedings.mlr.press/v306/ye26g.html) has a stable arXiv identifier and is classified as L5 because its outer loop evolves an executable skill that governs how the inner loop produces and improves later context artifacts, while the validation objective and outer search protocol remain fixed.
+- **0** duplicate arXiv IDs and **0** duplicate titles were found across the 524 entries.
 - All IDs match the arXiv identifier pattern `YYMM.NNNNN` (or its four-digit predecessor form).
 - Baseline source labels are preserved rather than inferred from keyword matching. Keyword-only screening would incorrectly omit lower-level but in-scope work such as automatic prompt search.
 
-The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm, Dream-RSI, and AIDE² were reviewed against the same inclusion and classification criteria using their primary papers. Aggregate visualizations should not be used to reconstruct individual paper metadata.
+The per-paper taxonomy dataset remains the authoritative record for the 491-paper baseline. The 28 extensions came from the survey's chapter tables; GPTSwarm, Dream-RSI, AIDE², Harness-Zero, and Meta Context Engineering were reviewed against the same inclusion and classification criteria using their primary papers. Aggregate visualizations should not be used to reconstruct individual paper metadata.
